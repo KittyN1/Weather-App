@@ -4,7 +4,7 @@
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -21,50 +21,56 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-
-
   </head>
 
   <body>
     <div class="container">
       <div class="box shadow-sm">
-        <h2>Weather Forcast in <span id="city">your city</span></br> <span id="date"></span></h2>
-        <div class="row">
-          <div class="col-12 pt-2 pb-5">
-            <form class="search-form" id="search-form">
+        <h2>Weather Forcast in <span id="city">your city</span></h2>
+
+        <form class="search-form" id="search-form">
+          <div class="row pt-2 pb-4 col-12 d-flex justify-content-center">
+            <div class="col-5">
               <input
                 type="search"
                 placeholder="Type a city.."
                 autofocus="on"
                 autocomplete="off"
                 id="city-input"
-                class="form-control"
+                class="form-control btn-light shadow-sm"
               />
-              <input type="submit" value="Go" class="form-control"/>
-              <button class="btn btn-success w-100" id="current-location-button">
+            </div>
+            <div class="col-2">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-light shadow-sm w-100"
+              />
+            </div>
+            <div class="col-2">
+              <button class="btn btn-light w-100" id="current-location-button">
                 Current
               </button>
-            </form>
+            </div>
           </div>
-        </div>
+        </form>
+
         <div class="row pb-2">
           <div class="col-4">Temperature</div>
-          <div class="col-4">Conditions</div>
           <div class="col-4">Change units</div>
+          <div class="col-4">Conditions</div>
         </div>
         <div class="row pb-5">
-          <div class="col-4" >
-            <span class="temperature" id="temperature">  </span
-              >
-          </div> 
-          <div class="col-4" id=description></div>
           <div class="col-4">
-              <span class="units">
-                  <a href="#" id="celsius-link">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a></span>
-           
+            <span class="temperature" id="temperature"> </span>
           </div>
+          <div class="col-4">
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a></span
+            >
+          </div>
+          <div class="col-4" id="description"></div>
         </div>
         <h2>Six Day Forcast</h2>
         <div class="row pb-5">
@@ -87,10 +93,9 @@
             Sat<br /><i class="fas fa-sun"></i> <br />34° 21°
           </div>
         </div>
+        <h2><span id="date"></span></h2>
       </div>
     </div>
-
-   
 
     <script src="src/index.js"></script>
   </body>
