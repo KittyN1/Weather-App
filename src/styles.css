@@ -9,7 +9,7 @@ body {
   font-family: "Raleway", sans-serif;
   color: #636363;
   text-align: center;
-  background: #fff;
+  background-color: rgba(242, 241, 239, 1);
   font-size: 14px;
 }
 
@@ -26,13 +26,12 @@ body {
   margin-right: 5px;
   margin-left: 5px;
   padding: 7px;
-  background: rgb(172, 172, 172);
-  background: rgb(216, 217, 215);
+  background: rgb(242, 242, 242);
   background: linear-gradient(
     0deg,
-    rgba(216, 217, 215, 1) 0%,
+    rgba(242, 242, 242, 1) 0%,
     rgba(242, 242, 242, 1) 36%,
-    rgba(242, 242, 242, 1) 100%
+    rgba(255, 255, 255, 1) 100%
   );
 }
 
