@@ -1,13 +1,16 @@
-h1 {
-  color: blue;
+h1,
+a:link {
+  color: #636363;
   font-family: "Raleway", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 body {
   font-family: "Raleway", sans-serif;
   color: #636363;
   text-align: center;
+  background: #fff;
+  font-size: 14px;
 }
 
 .container {
@@ -16,16 +19,24 @@ body {
 }
 
 .box {
-  border: 0.7px solid #636363;
+  border: 0px #fff;
   border-radius: 8px;
   margin-bottom: 5px;
   margin-top: 5px;
   margin-right: 5px;
   margin-left: 5px;
   padding: 7px;
+  background: rgb(172, 172, 172);
+  background: rgb(216, 217, 215);
+  background: linear-gradient(
+    0deg,
+    rgba(216, 217, 215, 1) 0%,
+    rgba(242, 242, 242, 1) 36%,
+    rgba(242, 242, 242, 1) 100%
+  );
 }
 
 .fa-sun {
   font-size: 30px;
-  color: #8675a9;
+  color: #3d4037;
 }
