@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="src/styles.css" >
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0d66174bf7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box shadow-sm">
+        <h2>Weather Forcast in <span id="city">your city</span></br> <span id="date"></span></h2>
+        <div class="row">
+          <div class="col-12 pt-2 pb-5">
+            <form class="search-form" id="search-form">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control"
+              />
+              <input type="submit" value="Go" class="form-control"/>
+            </form>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col-4">Temperature</div>
+          <div class="col-4">Conditions</div>
+          <div class="col-4">Change units</div>
+        </div>
+        <div class="row pb-5">
+          <div class="col-4" >
+            <span class="temperature" id="temperature">  </span
+              >
+          </div> 
+          <div class="col-4" id=description></div>
+          <div class="col-4">
+              <span class="units">
+                  <a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span>
+           
+          </div>
+        </div>
+        <h2>Six Day Forcast</h2>
+        <div class="row pb-5">
+          <div class="col-2">
+            Mon<br /><i class="fas fa-sun"></i> <br />34° 21°
+          </div>
+          <div class="col-2">
+            Tue<br /><i class="fas fa-sun"></i> <br />34° 21°
+          </div>
+          <div class="col-2">
+            Wed<br /><i class="fas fa-sun"></i> <br />34° 21°
+          </div>
+          <div class="col-2">
+            Thur<br /><i class="fas fa-sun"></i> <br />34° 21°
+          </div>
+          <div class="col-2">
+            Fri<br /><i class="fas fa-sun"></i> <br />34° 21°
+          </div>
+          <div class="col-2">
+            Sat<br /><i class="fas fa-sun"></i> <br />34° 21°
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
