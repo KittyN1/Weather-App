@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Parcel Sandbox</title>
+    <title>Weather app</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/0d66174bf7.js"
       crossorigin="anonymous"
@@ -27,7 +31,7 @@
     <div class="container">
       <div class="box shadow-sm">
         <h2>Weather Forcast in <span id="city">your city</span></h2>
-
+        <h3>Last updated: <span id="date"></span></h3>
         <form class="search-form" id="search-form">
           <div class="row pt-2 pb-4 col-12 d-flex justify-content-center">
             <div class="col-md-5">
@@ -47,56 +51,45 @@
                 class="form-control btn btn-light shadow-sm w-100"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <button class="btn btn-light w-100" id="current-location-button">
-                My location
+                Current
               </button>
             </div>
           </div>
         </form>
 
-        <div class="row pb-2">
-          <div class="col-4">Temperature</div>
-          <div class="col-4">Change units</div>
-          <div class="col-4">Conditions</div>
+        <div class="row pb-2 justify-content-center">
+          <div class="col-2">Temperature</div>
+          <div class="col-2">Change units</div>
+          <div class="col-2">Conditions</div>
+          <div class="col-2">Precipitation</div>
+          <div class="col-2">Wind Speed</div>
         </div>
-        <div class="row pb-5">
-          <div class="col-4">
+        <div class="row pb-2 justify-content-center">
+          <div class="col-2">
             <span class="temperature" id="temperature"> </span>
           </div>
-          <div class="col-4">
+          <div class="col-2">
             <span class="units">
               <a href="#" id="celsius-link">°C</a> |
               <a href="#" id="fahrenheit-link">°F</a></span
             >
           </div>
-          <div class="col-4" id="description"></div>
+          <div class="col-2" id="description"></div>
+          <div class="col-2"><span class id="precipitation"></span>%</div>
+          <div class="col-2"><span class id="wind-speed"></span>km/h</div>
         </div>
-        <h2>Six Day Forcast</h2>
-        <div class="row pb-5">
-          <div class="col-2">
-            Mon<br /><i class="fas fa-sun"></i> <br />34° 21°
-          </div>
-          <div class="col-2">
-            Tue<br /><i class="fas fa-sun"></i> <br />34° 21°
-          </div>
-          <div class="col-2">
-            Wed<br /><i class="fas fa-sun"></i> <br />34° 21°
-          </div>
-          <div class="col-2">
-            Thur<br /><i class="fas fa-sun"></i> <br />34° 21°
-          </div>
-          <div class="col-2">
-            Fri<br /><i class="fas fa-sun"></i> <br />34° 21°
-          </div>
-          <div class="col-2">
-            Sat<br /><i class="fas fa-sun"></i> <br />34° 21°
-          </div>
-        </div>
-        <h2><span id="date"></span></h2>
       </div>
     </div>
 
+    <div class="container">
+      <div class="box shadow-sm">
+        <br />
+        <div class="row weather-forecast" id="forecast"></div>
+        <br />
+      </div>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
