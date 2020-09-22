@@ -1,14 +1,18 @@
 h1,
-a:link {
-  color: #636363;
+a:link,
+h3 {
+  color: #000;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
 
 body {
   font-family: "Raleway", sans-serif;
-  color: #636363;
+  color: #000;
   text-align: center;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/001/740/original/background2.png?1595872363);
+  background-attachment: fixed;
+  background-size: cover;
   background-color: rgba(242, 241, 239, 1);
   font-size: 14px;
 }
@@ -26,13 +30,7 @@ body {
   margin-right: 5px;
   margin-left: 5px;
   padding: 7px;
-  background: rgb(242, 242, 242);
-  background: linear-gradient(
-    0deg,
-    rgba(242, 242, 242, 1) 0%,
-    rgba(242, 242, 242, 1) 36%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .fa-sun {
